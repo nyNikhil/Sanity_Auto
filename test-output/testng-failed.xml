@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="utlis.VerifyingTags">
+      <class name="utils.BrokenLink">
         <methods>
-          <include name="wion"/>
-          <include name="TeardownTest"/>
+          <include name="checkBrokenLinksZeeNews"/>
+          <include name="tearDown"/>
           <include name="setupTest"/>
         </methods>
-      </class> <!-- utlis.VerifyingTags -->
+      </class> <!-- utils.BrokenLink -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

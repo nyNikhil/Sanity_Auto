@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="classes" name="Suite1">
-  <test name="Test1">
+<suite name="Suite">
+  <test name="Test">
     <classes>
-      <class name=".Test_NGDemo"/>
+      <class name="utils.VerifyingTags"/>
+      <class name="utils.BrokenLink"/>
+
     </classes>
-  </test> <!-- Test1 -->
-</suite> <!-- Suite1 -->
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
