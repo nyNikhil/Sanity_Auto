@@ -3,11 +3,15 @@ package zee;
 
 	import org.apache.poi.ss.usermodel.*;
 
+
 	import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-	import java.io.FileOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
 	import java.io.IOException;
-	import java.util.List;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
 
 	public class WriteClass {
 		public static void writeResultsToExcel(String SheetName, String[] headers, List<String[]> data, boolean highlight) throws IOException {
@@ -64,19 +68,36 @@ package zee;
 			for (int i = 0; i < headers.length; i++) {
 				sheet.autoSizeColumn(i);
 			}
+			String basePath = System.getProperty("user.dir");
+	        String folderPath = basePath + File.separator + "excel";
+	        File directory = new File(folderPath);
+	        if (!directory.exists()) {
+	            directory.mkdirs();
+	        }
+	        String timestamp = new SimpleDateFormat("yyyy-MM-dd_HHmmss").format(new Date());
+	        String filePath = folderPath + File.separator + "Output_" + timestamp + ".xlsx";
 
 			// File path and name
-			String filePath = "C:\\Users\\Saurav.Tiwari\\eclipse-workspace3\\SeleniumFrame\\excel\\Output.xlsx";
+	     // Write file
+	        try (FileOutputStream fos = new FileOutputStream(filePath)) {
+	            workbook.write(fos);
+	        }
+	        workbook.close();
 
-			// Write to file
-			try (FileOutputStream fos = new FileOutputStream(filePath)) {
-				workbook.write(fos);
-			}
-			workbook.close();
-
-			System.out.println("Results written successfully to: " + filePath);
-		}
+	        System.out.println("Results written successfully to: " + filePath);
+	    }
 	}
+//			String filePath = "C:\\Users\\Saurav.Tiwari\\eclipse-workspace3\\SeleniumFrame\\excel\\Output.xlsx";
+//
+//			// Write to file
+//			try (FileOutputStream fos = new FileOutputStream(filePath)) {
+//				workbook.write(fos);
+//			}
+//			workbook.close();
+//
+//			System.out.println("Results written successfully to: " + filePath);
+//		}
+//	}
 
 
 
