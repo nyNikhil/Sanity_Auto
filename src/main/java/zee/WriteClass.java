@@ -5,7 +5,8 @@ package zee;
 
 	import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-	import java.io.FileOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
 	import java.io.IOException;
 	import java.util.List;
 
@@ -66,7 +67,12 @@ package zee;
 			}
 
 			// File path and name
-			String filePath = "C:\\Users\\Saurav.Tiwari\\eclipse-workspace3\\SeleniumFrame\\excel\\Output.xlsx";
+			String projectPath = System.getProperty("user.dir");  
+
+            // Construct the dynamic path
+            String filePath = projectPath + File.separator + "excel" + File.separator + "Output.xlsx";
+
+			
 
 			// Write to file
 			try (FileOutputStream fos = new FileOutputStream(filePath)) {
