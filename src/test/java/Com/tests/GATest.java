@@ -12,11 +12,9 @@ import zee.WriteClass;
 
 public class GATest {
 
-	
 	@Test
-	public void test () {	
+	public void GATest() {
 		BaseTest baseTest = new BaseTest();
-		
 		baseTest.setup();
 
 		List<String[]> results = new ArrayList<>();
