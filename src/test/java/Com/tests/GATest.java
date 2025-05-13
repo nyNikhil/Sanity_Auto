@@ -3,14 +3,20 @@ package Com.tests;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
+import org.testng.annotations.Test;
+
 import zee.BaseTest;
 import zee.GAValidationPage;
 import zee.WriteClass;
 
 public class GATest {
 
-	public static void main(String[] args) {
+	
+	@Test
+	public void test () {	
 		BaseTest baseTest = new BaseTest();
+		
 		baseTest.setup();
 
 		List<String[]> results = new ArrayList<>();
