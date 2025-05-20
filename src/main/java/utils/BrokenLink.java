@@ -134,7 +134,7 @@ public class BrokenLink {
 
     @Test
     public void checkBrokenLinksZeeNews() {
-        checkBrokenLinksForWebsite("https://dev2-wionweb.project-turbine.in/videos");
+        checkBrokenLinksForWebsite("https://www.wionews.com/");
     }
 
     private void checkBrokenLinksForWebsite(String websiteUrl) {
