@@ -89,9 +89,7 @@ package zee;
 //}
 
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.devtools.DevTools;
 import org.openqa.selenium.devtools.v126.network.Network;
 import org.openqa.selenium.devtools.v126.network.model.Request;
@@ -109,6 +107,7 @@ public class PvsidValidator {
 //        WebDriver driver = new FirefoxDriver();
     	WebDriverManager.chromedriver().setup();
         ChromeDriver driver = new ChromeDriver();
+        driver.get("https://zeenews.india.com/");
         
         DevTools devTools = driver.getDevTools();
         devTools.createSession();
