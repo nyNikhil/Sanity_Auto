@@ -2,6 +2,7 @@ package Com.tests;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
@@ -23,6 +24,9 @@ public class GAComScoreTest {
 		baseTest.setupchrome();
 
 		List<String[]> results = new ArrayList<>();
+		List<String> urls = Arrays.asList(
+				"https://zeenews.india.com/"    
+				);
 		// Setup ChromeDriver 
 		WebDriverManager.chromedriver().setup();
 
@@ -49,31 +53,42 @@ public class GAComScoreTest {
 						String tid = param.split("=")[1];
 						System.out.println("Found tid: " + tid);
 
+						results.add(new String[]{
+								url,                     
+								"GA Tag",               
+								"tid should be present",
+								tid,                     
+								(tid.isEmpty() ? "Fail" : "Pass")  
+						});
+
 					}
 				}
 			}
 		});
 
 		// Navigate to target site
-		driver.get("https://zeenews.india.com/");
+		for (String site : urls) {
+			driver.get(site);
 
-		// Wait some time to let the network activity complete
-		try {
-			Thread.sleep(10000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
+			// Wait some time to let the network activity complete
+			try {
+				Thread.sleep(10000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+
+			try {
+				String[] headers = {"URL", "Tag Name", "Expected Content", "Actual Content", "Status"};
+				//			
+				WriteClass.writeResultsToExcel("SEO Validation Results", headers, results, true);
+			} catch (IOException e) {
+				System.err.println("Failed to write results to Excel: " + e.getMessage());
+			}
+
+
+			// Quit browser
+			driver.quit();
 		}
-
-		try {
-			String[] headers = {"URL", "Tag Name", "Expected Content", "Actual Content", "Status"};
-			WriteClass.writeResultsToExcel("SEO Validation Results", headers, results, true);
-		} catch (IOException e) {
-			System.err.println("Failed to write results to Excel: " + e.getMessage());
-		}
-
-
-		// Quit browser
-		driver.quit();
 	}
 }
 
