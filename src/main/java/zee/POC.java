@@ -22,29 +22,47 @@ public class POC {
 
 	   public static void main(String[] args) {
 
-		// Setup ChromeDriver (Ensure chromedriver is in PATH or specify path)
+		// Setup ChromeDriver 
 			 WebDriverManager.chromedriver().setup();
-	        //System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
+	       
 	         WebDriver driver = new ChromeDriver();    
 
 	        DevTools devTools = ((HasDevTools) driver).getDevTools();
 	        devTools.createSession();
 
-	        // Enable Network monitoring
+	     // Enable Network tracking
 	        devTools.send(Network.enable(Optional.empty(), Optional.empty(), Optional.empty()));
 
-	        // Listen to network requests
+	        // Add listener to capture requests
 	        devTools.addListener(Network.requestWillBeSent(), request -> {
 	            Request req = request.getRequest();
-	            System.out.println("URL: " + req.getUrl());
-	            System.out.println("Method: " + req.getMethod());
-	            System.out.println("Post Data: " + req.getPostData().orElse("N/A"));
+	            String url = req.getUrl();
+	            if (url.contains("collect") && 
+	            	    (url.contains("tid=G-K") || url.contains("tid=UA-"))) {
+	                System.out.println("GA request URL: " + url);
+
+	                // Extract tid from the URL
+	                String[] params = url.split("[?&]");
+	                for (String param : params) {
+	                    if (param.startsWith("tid=")) {
+	                        String tid = param.split("=")[1];
+	                        System.out.println("Found tid: " + tid);
+	                    }
+	                }
+	            }
 	        });
 
-	        driver.get("https://yourwebsite.com");
+	        // Navigate to target site
+	        driver.get("https://zeenews.india.com/");
 
-	        // Perform actions here to trigger network calls
+	        // Wait some time to let the network activity complete
+	        try {
+	            Thread.sleep(10000);
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
 
+	        // Quit browser
 	        driver.quit();
 	    }
-}
+	}

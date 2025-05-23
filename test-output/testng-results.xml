@@ -1,110 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite started-at="2025-05-23T00:13:33Z" name="Default suite" finished-at="2025-05-23T00:13:58Z" duration-ms="24442">
+  <suite started-at="2025-05-23T14:11:31 IST" name="Default suite" finished-at="2025-05-23T14:13:25 IST" duration-ms="114058">
     <groups>
     </groups>
-    <test started-at="2025-05-23T00:13:33Z" name="Default test" finished-at="2025-05-23T00:13:58Z" duration-ms="24442">
-      <class name="Com.tests.SeoTest">
-        <test-method signature="seoTest()[pri:0, instance:Com.tests.SeoTest@3cce5371]" started-at="2025-05-23T05:43:33Z" name="seoTest" finished-at="2025-05-23T05:43:58Z" duration-ms="24426" status="PASS">
+    <test started-at="2025-05-23T14:11:31 IST" name="Default test" finished-at="2025-05-23T14:13:25 IST" duration-ms="114058">
+      <class name="Com.tests.GAComScoreTest">
+        <test-method signature="GATest()[pri:0, instance:Com.tests.GAComScoreTest@2a7f1f10]" started-at="2025-05-23T14:11:31 IST" name="GATest" finished-at="2025-05-23T14:13:25 IST" duration-ms="114012" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- seoTest -->
-      </class> <!-- Com.tests.SeoTest -->
-=======
-<<<<<<< HEAD
-  <suite started-at="2025-05-15T14:09:24 IST" name="Default suite" finished-at="2025-05-15T14:09:47 IST" duration-ms="23086">
-=======
-  <suite started-at="2025-05-19T10:53:07Z" name="Default suite" finished-at="2025-05-19T10:56:41Z" duration-ms="214107">
->>>>>>> branch 'master' of https://github.com/nyNikhil/Sanity_Auto.git
-    <groups>
-    </groups>
-<<<<<<< HEAD
-    <test started-at="2025-05-15T14:09:24 IST" name="Default test" finished-at="2025-05-15T14:09:47 IST" duration-ms="23086">
-      <class name="Com.tests.ZeeTest$ZeeNewsTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Com.tests.ZeeTest$ZeeNewsTest@cb0755b]" started-at="2025-05-15T14:09:24 IST" name="setUp" finished-at="2025-05-15T14:09:26 IST" duration-ms="1763" status="PASS">
-=======
-    <test started-at="2025-05-19T10:53:07Z" name="Default test" finished-at="2025-05-19T10:56:41Z" duration-ms="214107">
-      <class name="zee.BrokenLink">
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:zee.BrokenLink@3feb2dda]" started-at="2025-05-19T16:23:07Z" name="setupTest" finished-at="2025-05-19T16:23:12Z" duration-ms="4716" status="PASS">
->>>>>>> branch 'master' of https://github.com/nyNikhil/Sanity_Auto.git
-          <reporter-output>
-          </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyHomePageTitle()[pri:1, instance:Com.tests.ZeeTest$ZeeNewsTest@cb0755b]" started-at="2025-05-15T14:09:26 IST" name="verifyHomePageTitle" finished-at="2025-05-15T14:09:43 IST" duration-ms="16794" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyHomePageTitle -->
-        <test-method signature="verifyTopNavMenuLinks()[pri:2, instance:Com.tests.ZeeTest$ZeeNewsTest@cb0755b]" started-at="2025-05-15T14:09:43 IST" name="verifyTopNavMenuLinks" finished-at="2025-05-15T14:09:45 IST" duration-ms="2417" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTopNavMenuLinks -->
-        <test-method signature="verifyGAtrackingPresent()[pri:3, instance:Com.tests.ZeeTest$ZeeNewsTest@cb0755b]" started-at="2025-05-15T14:09:45 IST" name="verifyGAtrackingPresent" finished-at="2025-05-15T14:09:47 IST" duration-ms="1695" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[GA tracking code G-K4Q9W8LH6V not found expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: GA tracking code G-K4Q9W8LH6V not found expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at Com.tests.ZeeTest$ZeeNewsTest.verifyGAtrackingPresent(ZeeTest.java:62)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyGAtrackingPresent -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Com.tests.ZeeTest$ZeeNewsTest@cb0755b]" started-at="2025-05-15T14:09:47 IST" name="tearDown" finished-at="2025-05-15T14:09:47 IST" duration-ms="382" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Com.tests.ZeeTest$ZeeNewsTest -->
-=======
-        </test-method> <!-- setupTest -->
-        <test-method signature="checkBrokenLinksWionNews()[pri:0, instance:zee.BrokenLink@3feb2dda]" started-at="2025-05-19T16:23:12Z" name="checkBrokenLinksWionNews" finished-at="2025-05-19T16:26:39Z" duration-ms="207607" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkBrokenLinksWionNews -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:zee.BrokenLink@3feb2dda]" started-at="2025-05-19T16:26:39Z" name="tearDown" finished-at="2025-05-19T16:26:41Z" duration-ms="1761" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- zee.BrokenLink -->
->>>>>>> branch 'master' of https://github.com/nyNikhil/Sanity_Auto.git
->>>>>>> 4071da56a73e35341b36871278950ff8152db402
+        </test-method> <!-- GATest -->
+      </class> <!-- Com.tests.GAComScoreTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
