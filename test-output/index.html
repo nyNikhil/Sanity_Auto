@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,11 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
+<<<<<<< HEAD
+              <span class="suite-name border-failed">Default suite</span>
+=======
               <span class="suite-name border-passed">Default suite</span>
+>>>>>>> branch 'master' of https://github.com/nyNikhil/Sanity_Auto.git
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +53,15 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
+<<<<<<< HEAD
                     <span>C:\Users\zee\AppData\Local\Temp\testng-eclipse--838560766\testng-customsuite.xml</span>
+=======
+<<<<<<< HEAD
+                    <span>C:\Users\Nikhil.yadav\AppData\Local\Temp\testng-eclipse--633877361\testng-customsuite.xml</span>
+=======
+                    <span>C:\Users\zee\AppData\Local\Temp\testng-eclipse-250615335\testng-customsuite.xml</span>
+>>>>>>> branch 'master' of https://github.com/nyNikhil/Sanity_Auto.git
+>>>>>>> 4071da56a73e35341b36871278950ff8152db402
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +103,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Com.tests.ZeeTest$ZeeNewsTest" class="method navigator-link" hash-for-method="verifyGAtrackingPresent">verifyGAtrackingPresent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,9 +128,25 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+<<<<<<< HEAD
                         <a href="#" panel-name="suite-Default_suite" title="Com.tests.SeoTest" class="method navigator-link" hash-for-method="seoTest">seoTest</a> <!-- method navigator-link -->
+=======
+<<<<<<< HEAD
+                        <a href="#" panel-name="suite-Default_suite" title="Com.tests.ZeeTest$ZeeNewsTest" class="method navigator-link" hash-for-method="verifyHomePageTitle">verifyHomePageTitle</a> <!-- method navigator-link -->
+=======
+                        <a href="#" panel-name="suite-Default_suite" title="zee.BrokenLink" class="method navigator-link" hash-for-method="checkBrokenLinksWionNews">checkBrokenLinksWionNews</a> <!-- method navigator-link -->
+>>>>>>> branch 'master' of https://github.com/nyNikhil/Sanity_Auto.git
+>>>>>>> 4071da56a73e35341b36871278950ff8152db402
                       </span>
                       <br/>
+<<<<<<< HEAD
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Com.tests.ZeeTest$ZeeNewsTest" class="method navigator-link" hash-for-method="verifyTopNavMenuLinks">verifyTopNavMenuLinks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+=======
+>>>>>>> branch 'master' of https://github.com/nyNikhil/Sanity_Auto.git
                     </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
@@ -117,34 +159,141 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+<<<<<<< HEAD
+          <div class="suite-Default_suite-class-failed">
+=======
           <div class="suite-Default_suite-class-passed">
+>>>>>>> branch 'master' of https://github.com/nyNikhil/Sanity_Auto.git
             <div class="main-panel-header rounded-window-top">
+<<<<<<< HEAD
+              <img src="failed.png"/>
+              <span class="class-name">Com.tests.ZeeTest$ZeeNewsTest</span>
+=======
               <img src="passed.png"/>
+<<<<<<< HEAD
               <span class="class-name">Com.tests.SeoTest</span>
+=======
+              <span class="class-name">zee.BrokenLink</span>
+>>>>>>> branch 'master' of https://github.com/nyNikhil/Sanity_Auto.git
+>>>>>>> 4071da56a73e35341b36871278950ff8152db402
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+<<<<<<< HEAD
                   <a name="seoTest">
                   </a> <!-- seoTest -->
                   <span class="method-name">seoTest</span>
+=======
+<<<<<<< HEAD
+                  <a name="verifyGAtrackingPresent">
+                  </a> <!-- verifyGAtrackingPresent -->
+                  <span class="method-name">verifyGAtrackingPresent</span>
+                  <div class="stack-trace">java.lang.AssertionError: GA tracking code G-K4Q9W8LH6V not found expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at Com.tests.ZeeTest$ZeeNewsTest.verifyGAtrackingPresent(ZeeTest.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+=======
+                  <a name="checkBrokenLinksWionNews">
+                  </a> <!-- checkBrokenLinksWionNews -->
+                  <span class="method-name">checkBrokenLinksWionNews</span>
+>>>>>>> branch 'master' of https://github.com/nyNikhil/Sanity_Auto.git
+>>>>>>> 4071da56a73e35341b36871278950ff8152db402
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
+<<<<<<< HEAD
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Com.tests.ZeeTest$ZeeNewsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHomePageTitle">
+                  </a> <!-- verifyHomePageTitle -->
+                  <span class="method-name">verifyHomePageTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTopNavMenuLinks">
+                  </a> <!-- verifyTopNavMenuLinks -->
+                  <span class="method-name">verifyTopNavMenuLinks</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+=======
+>>>>>>> branch 'master' of https://github.com/nyNikhil/Sanity_Auto.git
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
+<<<<<<< HEAD
             <span class="header-content">C:\Users\zee\AppData\Local\Temp\testng-eclipse--838560766\testng-customsuite.xml</span>
+=======
+<<<<<<< HEAD
+            <span class="header-content">C:\Users\Nikhil.yadav\AppData\Local\Temp\testng-eclipse--633877361\testng-customsuite.xml</span>
+=======
+            <span class="header-content">C:\Users\zee\AppData\Local\Temp\testng-eclipse-250615335\testng-customsuite.xml</span>
+>>>>>>> branch 'master' of https://github.com/nyNikhil/Sanity_Auto.git
+>>>>>>> 4071da56a73e35341b36871278950ff8152db402
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+<<<<<<< HEAD
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+=======
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+>>>>>>> branch 'master' of https://github.com/nyNikhil/Sanity_Auto.git
     &lt;classes&gt;
+<<<<<<< HEAD
       &lt;class name=&quot;Com.tests.SeoTest&quot;/&gt;
+=======
+<<<<<<< HEAD
+      &lt;class name=&quot;Com.tests.ZeeTest&quot;/&gt;
+=======
+      &lt;class name=&quot;zee.BrokenLink&quot;/&gt;
+>>>>>>> branch 'master' of https://github.com/nyNikhil/Sanity_Auto.git
+>>>>>>> 4071da56a73e35341b36871278950ff8152db402
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -184,16 +333,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
+<<<<<<< HEAD
 data.setCell(0, 1, 'seoTest')
 data.setCell(0, 2, 'Com.tests.SeoTest')
 data.setCell(0, 3, 24426);
+=======
+<<<<<<< HEAD
+data.setCell(0, 1, 'verifyHomePageTitle')
+data.setCell(0, 2, 'Com.tests.ZeeTest$ZeeNewsTest')
+data.setCell(0, 3, 16794);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyTopNavMenuLinks')
+data.setCell(1, 2, 'Com.tests.ZeeTest$ZeeNewsTest')
+data.setCell(1, 3, 2417);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyGAtrackingPresent')
+data.setCell(2, 2, 'Com.tests.ZeeTest$ZeeNewsTest')
+data.setCell(2, 3, 1695);
+=======
+data.setCell(0, 1, 'checkBrokenLinksWionNews')
+data.setCell(0, 2, 'zee.BrokenLink')
+data.setCell(0, 3, 207607);
+>>>>>>> branch 'master' of https://github.com/nyNikhil/Sanity_Auto.git
+>>>>>>> 4071da56a73e35341b36871278950ff8152db402
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
+<<<<<<< HEAD
               <span class="suite-total-time">Total running time: 24 seconds</span>
+=======
+<<<<<<< HEAD
+              <span class="suite-total-time">Total running time: 20 seconds</span>
+=======
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+>>>>>>> branch 'master' of https://github.com/nyNikhil/Sanity_Auto.git
+>>>>>>> 4071da56a73e35341b36871278950ff8152db402
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -219,11 +396,56 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
+<<<<<<< HEAD
               <div class="chronological-class-name">Com.tests.SeoTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">seoTest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
+=======
+<<<<<<< HEAD
+              <div class="chronological-class-name">Com.tests.ZeeTest$ZeeNewsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+=======
+              <div class="chronological-class-name">zee.BrokenLink</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setupTest</span>
+>>>>>>> branch 'master' of https://github.com/nyNikhil/Sanity_Auto.git
+                <span class="method-start">0 ms</span>
+<<<<<<< HEAD
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyHomePageTitle</span>
+                <span class="method-start">1774 ms</span>
+=======
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">checkBrokenLinksWionNews</span>
+                <span class="method-start">4729 ms</span>
+>>>>>>> branch 'master' of https://github.com/nyNikhil/Sanity_Auto.git
+              </div> <!-- test-method -->
+<<<<<<< HEAD
+              <div class="test-method">
+                <span class="method-name">verifyTopNavMenuLinks</span>
+                <span class="method-start">18571 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyGAtrackingPresent</span>
+                <span class="method-start">20989 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">22686 ms</span>
+=======
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">212342 ms</span>
+>>>>>>> branch 'master' of https://github.com/nyNikhil/Sanity_Auto.git
+              </div> <!-- configuration-class after -->
+>>>>>>> 4071da56a73e35341b36871278950ff8152db402
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

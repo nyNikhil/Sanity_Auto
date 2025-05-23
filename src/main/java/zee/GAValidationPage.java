@@ -16,6 +16,8 @@ public class GAValidationPage {
     public void validateGATrackingIDs() {
         Map<String, String> urlToGATrackingID = new HashMap<>();
         urlToGATrackingID.put("https://zeenews.india.com/", "G-K4Q9W8LH6V");
+        urlToGATrackingID.put("https://zeenews.india.com/photos", "G-K4Q9W8LH6V");
+        urlToGATrackingID.put("https://www.dnaindia.com/", "G-RBQCS7B03R");
    
 
         for (Map.Entry<String, String> entry : urlToGATrackingID.entrySet()) {
@@ -32,9 +34,9 @@ public class GAValidationPage {
 
             String pageSource = driver.getPageSource();
             if (pageSource.contains(expectedGATID)) {
-                results.add(new String[]{url, "GA Tracking ID", expectedGATID, "Found in page source", "PASS"});
+                results.add(new String[]{url, "GA Tracking ID", expectedGATID, "Found in page source" +expectedGATID, "PASS"});
             } else {
-                results.add(new String[]{url, "GA Tracking ID", expectedGATID, "Not found in page source", "FAIL"});
+                results.add(new String[]{url, "GA Tracking ID", expectedGATID, "Not found in page source" +expectedGATID, "FAIL"});
             }
         } catch (Exception e) {
             results.add(new String[]{url, "GA Tracking ID", expectedGATID, "Error: " + e.getMessage(), "ERROR"});
