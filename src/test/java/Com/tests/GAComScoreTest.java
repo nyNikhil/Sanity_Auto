@@ -23,58 +23,58 @@ public class GAComScoreTest {
 		baseTest.setupchrome();
 
 		List<String[]> results = new ArrayList<>();
-	// Setup ChromeDriver 
-	 WebDriverManager.chromedriver().setup();
-  
-    WebDriver driver = new ChromeDriver();    
+		// Setup ChromeDriver 
+		WebDriverManager.chromedriver().setup();
 
-   DevTools devTools = ((HasDevTools) driver).getDevTools();
-   devTools.createSession();
+		WebDriver driver = new ChromeDriver();    
 
-// Enable Network tracking
-   devTools.send(Network.enable(Optional.empty(), Optional.empty(), Optional.empty()));
+		DevTools devTools = ((HasDevTools) driver).getDevTools();
+		devTools.createSession();
 
-   // Add listener to capture requests
-   devTools.addListener(Network.requestWillBeSent(), request -> {
-       Request req = request.getRequest();
-       String url = req.getUrl();
-       if (url.contains("collect") && 
-       	    (url.contains("tid=G-K") || url.contains("tid=UA-"))) {
-           System.out.println("GA request URL: " + url);
+		// Enable Network tracking
+		devTools.send(Network.enable(Optional.empty(), Optional.empty(), Optional.empty()));
 
-           // Extract tid from the URL
-           String[] params = url.split("[?&]");
-           for (String param : params) {
-               if (param.startsWith("tid=")) {
-                   String tid = param.split("=")[1];
-                   System.out.println("Found tid: " + tid);
-                 
-               }
-           }
-       }
-   });
+		// Add listener to capture requests
+		devTools.addListener(Network.requestWillBeSent(), request -> {
+			Request req = request.getRequest();
+			String url = req.getUrl();
+			if (url.contains("collect") && 
+					(url.contains("tid=G-K") || url.contains("tid=UA-"))) {
+				System.out.println("GA request URL: " + url);
 
-   // Navigate to target site
-   driver.get("https://zeenews.india.com/");
+				// Extract tid from the URL
+				String[] params = url.split("[?&]");
+				for (String param : params) {
+					if (param.startsWith("tid=")) {
+						String tid = param.split("=")[1];
+						System.out.println("Found tid: " + tid);
 
-   // Wait some time to let the network activity complete
-   try {
-       Thread.sleep(10000);
-   } catch (InterruptedException e) {
-       e.printStackTrace();
-   }
-   
-	try {
-		String[] headers = {"URL", "Tag Name", "Expected Content", "Actual Content", "Status"};
-		WriteClass.writeResultsToExcel("SEO Validation Results", headers, results, true);
-	} catch (IOException e) {
-		System.err.println("Failed to write results to Excel: " + e.getMessage());
+					}
+				}
+			}
+		});
+
+		// Navigate to target site
+		driver.get("https://zeenews.india.com/");
+
+		// Wait some time to let the network activity complete
+		try {
+			Thread.sleep(10000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+
+		try {
+			String[] headers = {"URL", "Tag Name", "Expected Content", "Actual Content", "Status"};
+			WriteClass.writeResultsToExcel("SEO Validation Results", headers, results, true);
+		} catch (IOException e) {
+			System.err.println("Failed to write results to Excel: " + e.getMessage());
+		}
+
+
+		// Quit browser
+		driver.quit();
 	}
-
-
-   // Quit browser
-   driver.quit();
-}
 }
 
 

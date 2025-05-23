@@ -12,12 +12,12 @@ import zee.WriteClass;
 
 public class SeoTest {
 
-	
+
 	@Test
 	public void seoTest() {
 		BaseTest baseTest = new BaseTest();
 		baseTest.setup();
-		
+
 		List<String[]> results = new ArrayList<>();
 
 		// SEO Tag Testing
@@ -28,14 +28,14 @@ public class SeoTest {
 		// Writing results to Excel
 
 		try {
-		String[] headers = {"URL", "Tag Name", "Expected Content", "Actual Content", "Status"};
-		WriteClass.writeResultsToExcel("SEO Validation Results", headers, results, true);
+			String[] headers = {"URL", "Tag Name", "Expected Content", "Actual Content", "Status"};
+			WriteClass.writeResultsToExcel("SEO Validation Results", headers, results, true);
 		} catch (IOException e) {
-	System.err.println("Failed to write results to Excel: " + e.getMessage());
+			System.err.println("Failed to write results to Excel: " + e.getMessage());
 
 		}
 		baseTest.teardown();
 
-		}
-		
 	}
+
+}
