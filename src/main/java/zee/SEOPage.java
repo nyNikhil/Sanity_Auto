@@ -122,7 +122,9 @@ public class SEOPage {
     public void testSEOAttributes() {
         List<String> urls = Arrays.asList(
             "https://zeenews.india.com/",
-            "https://www.dnaindia.com/"
+            "https://zeenews.india.com/india",
+            "https://zeenews.india.com/india/supreme-court-stays-ed-probe-into-tamil-nadus-tasmac-issues-notice-to-agency-2904591.html"
+//            "https://www.dnaindia.com/"
         );
 
         for (String url : urls) {
@@ -163,6 +165,34 @@ public class SEOPage {
             expectedValues.put("og:url", "https://www.dnaindia.com");
             expectedValues.put("og:image", "https://cdn.dnaindia.com/images/2018/DNA-1200.png");
             expectedValues.put("canonical", "https://www.dnaindia.com/");
+        }
+        else if (url.equals("https://zeenews.india.com/india")) {
+        	 expectedValues.put("viewport", "width=device-width, initial-scale=1");
+             expectedValues.put("robots", "max-image-preview:large");
+             expectedValues.put("theme-color", "#345678");
+             expectedValues.put("description", "India News, National News: Zee News brings latest news from India including breaking news, current India news live, political news, Indian sports news, and news headlines which gives you exclusive information about all that happening in India.");
+             expectedValues.put("keywords", "India News, latest news india,national news, india news live, breaking news india, current news india, news headlines india");
+             expectedValues.put("og:type", "website");
+             expectedValues.put("og:site_name", "Zee News");
+             expectedValues.put("og:title", "India News, National News, Latest News India, India News Live, Breaking News India, News Headlines India: Zee News");
+             expectedValues.put("og:description", "Zee News brings latest news from India and World on breaking news, today news headlines, politics, business, technology, bollywood, entertainment, sports and others. Find exclusive news stories on Indian politics, current affairs, cricket matches, festivals and events");
+             expectedValues.put("og:url", "https://zeenews.india.com/india");
+             expectedValues.put("og:image", "https://english.cdn.zeenews.com/images/logo/placeholder_image.jpg");
+             expectedValues.put("canonical", "https://zeenews.india.com/india");
+        }
+        else if (url.equals("https://zeenews.india.com/india/supreme-court-stays-ed-probe-into-tamil-nadus-tasmac-issues-notice-to-agency-2904591.html")) {
+        	 expectedValues.put("viewport", "width=device-width, initial-scale=1");
+             expectedValues.put("robots", "max-image-preview:large");
+             expectedValues.put("theme-color", "#345678");
+             expectedValues.put("description", "The stay was issued in response to a petition filed by the Tamil Nadu government, which challenged the recent raids conducted by the central agency at various TASMAC locations.");
+             expectedValues.put("keywords", "Tasmac,Tasmac");
+             expectedValues.put("og:type", "website");
+             expectedValues.put("og:site_name", "Zee News");
+             expectedValues.put("og:title", "Supreme Court Stays ED Probe Into Tamil Nadus TASMAC; Issues Notice To Agency");
+             expectedValues.put("og:description", "The stay was issued in response to a petition filed by the Tamil Nadu government, which challenged the recent raids conducted by the central agency at various TASMAC locations.");
+             expectedValues.put("og:url", "https://zeenews.india.com/india/supreme-court-stays-ed-probe-into-tamil-nadus-tasmac-issues-notice-to-agency-2904591.html");
+             expectedValues.put("og:image", "https://english.cdn.zeenews.com/sites/default/files/2025/05/22/1754129-mixcollage-20-may-2025-11-38-am-6830.jpg");
+             expectedValues.put("canonical", "https://zeenews.india.com/india/supreme-court-stays-ed-probe-into-tamil-nadus-tasmac-issues-notice-to-agency-2904591.html");
         }
 
         return expectedValues.isEmpty() ? null : expectedValues;

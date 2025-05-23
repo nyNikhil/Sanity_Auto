@@ -36,7 +36,7 @@ public class BrokenLink {
 		driver.manage().timeouts().pageLoadTimeout(java.time.Duration.ofSeconds(60)); // Set page load timeout
 		data.add(new String[]{"Website URL", "Link", "Status Code", "Result"});
 	}
-
+//uygyuf
 	@Test
 	public void checkBrokenLinksWionNews() {
 		checkBrokenLinksForWebsite("https://www.wionews.com/science");
