@@ -1,4 +1,5 @@
-package zee;
+package Com.tests;
+
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
@@ -21,8 +22,9 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.netty.handler.timeout.TimeoutException;
+import zee.WriteClass;
 
-public class BrokenLink {
+public class Broken_Link {
 	WebDriver driver;
 	List<String[]> data = new ArrayList<>();
 	Set<String> checkedUrls = new HashSet<>(); // To track processed URLs
@@ -31,15 +33,14 @@ public class BrokenLink {
 	public void setupTest() {
 		WebDriverManager.firefoxdriver().setup();
 		FirefoxOptions options = new FirefoxOptions();
-
 		driver = new FirefoxDriver(options);
 		driver.manage().timeouts().pageLoadTimeout(java.time.Duration.ofSeconds(60)); // Set page load timeout
 		data.add(new String[]{"Website URL", "Link", "Status Code", "Result"});
 	}
-//uygyuf
+
 	@Test
-	public void checkBrokenLinksWionNews() {
-		checkBrokenLinksForWebsite("https://www.wionews.com/science");
+	public void checkBrokenLinksZeeNews() {
+		checkBrokenLinksForWebsite("https://zeenews.india.com/");
 	}
 
 	private void checkBrokenLinksForWebsite(String websiteUrl) {

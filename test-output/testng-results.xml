@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-23T12:27:00Z" name="Default suite" finished-at="2025-05-23T12:27:49Z" duration-ms="48877">
+  <suite started-at="2025-05-26T09:19:42Z" name="Default suite" finished-at="2025-05-26T09:20:13Z" duration-ms="30691">
     <groups>
     </groups>
-    <test started-at="2025-05-23T12:27:00Z" name="Default test" finished-at="2025-05-23T12:27:49Z" duration-ms="48877">
-      <class name="Com.tests.GAComScoreTest">
-        <test-method signature="GATest()[pri:0, instance:Com.tests.GAComScoreTest@65f8f5ae]" started-at="2025-05-23T17:57:00Z" name="GATest" finished-at="2025-05-23T17:57:49Z" duration-ms="48863" status="PASS">
+    <test started-at="2025-05-26T09:19:42Z" name="Default test" finished-at="2025-05-26T09:20:13Z" duration-ms="30691">
+      <class name="Com.tests.SeoTest">
+        <test-method signature="seoTest()[pri:0, instance:Com.tests.SeoTest@5b38c1ec]" started-at="2025-05-26T14:49:42Z" name="seoTest" finished-at="2025-05-26T14:50:13Z" duration-ms="30679" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- GATest -->
-      </class> <!-- Com.tests.GAComScoreTest -->
+        </test-method> <!-- seoTest -->
+      </class> <!-- Com.tests.SeoTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

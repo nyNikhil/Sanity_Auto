@@ -123,8 +123,14 @@ public class SEOPage {
 		List<String> urls = Arrays.asList(
 				"https://zeenews.india.com/",
 				"https://zeenews.india.com/india",
-				"https://zeenews.india.com/india/supreme-court-stays-ed-probe-into-tamil-nadus-tasmac-issues-notice-to-agency-2904591.html"
-				//            "https://www.dnaindia.com/"
+				"https://zeenews.india.com/india/new-chapter-in-india-canada-relations-jaishankar-anand-hold-talks-to-improve-ties-2906345.html",
+				"https://zeenews.india.com/videos",
+				"https://zeenews.india.com/video/news/dna-army-chief-asim-munir-who-has-become-field-marshal-in-pakistan-is-creating-new-dramas-every-day-2906006.html",
+				"https://zeenews.india.com/photos",
+				"https://zeenews.india.com/photos/sports/ipl-2025-how-can-rcbmi-pbks-gt-qualify-for-top-2-all-qualification-scenarios-explained-2906349"
+				
+				
+				
 				);
 
 		for (String url : urls) {
@@ -153,19 +159,6 @@ public class SEOPage {
 			expectedValues.put("og:image", "https://english.cdn.zeenews.com/images/logo/placeholder_image.jpg");
 			expectedValues.put("canonical", "https://zeenews.india.com/");
 		} 
-		else if (url.equals("https://www.dnaindia.com/")) {  // Moved inside method
-			expectedValues.put("viewport", "width=device-width, initial-scale=1, maximum-scale=1");
-			expectedValues.put("robots", "max-image-preview:large");
-			expectedValues.put("description", "Latest News Headlines and Live Updates - DNA India Covers all latest and breaking news on Politics, Business, Sports, Bollywood, technology &amp; health from India &amp; the world at Daily News &amp; Analysis");
-			expectedValues.put("keywords", "news, latest news, breaking news, live news, live updates, bollywood news, health news, news headlines, India news, top news, political news, business news, technology news, sports news");
-			expectedValues.put("og:type", "website");
-			expectedValues.put("og:site_name", "DNA India");
-			expectedValues.put("og:title", "DNA India | Latest News, Live Breaking News on India, Politics, World, Business, Sports, Bollywood");
-			expectedValues.put("og:description", "Latest News Headlines and Live Updates - DNA India Covers all latest and breaking news on Politics, Business, Sports, Bollywood, technology &amp; health from India &amp; the world at Daily News &amp; Analysis");
-			expectedValues.put("og:url", "https://www.dnaindia.com");
-			expectedValues.put("og:image", "https://cdn.dnaindia.com/images/2018/DNA-1200.png");
-			expectedValues.put("canonical", "https://www.dnaindia.com/");
-		}
 		else if (url.equals("https://zeenews.india.com/india")) {
 			expectedValues.put("viewport", "width=device-width, initial-scale=1");
 			expectedValues.put("robots", "max-image-preview:large");
@@ -180,20 +173,73 @@ public class SEOPage {
 			expectedValues.put("og:image", "https://english.cdn.zeenews.com/images/logo/placeholder_image.jpg");
 			expectedValues.put("canonical", "https://zeenews.india.com/india");
 		}
-		else if (url.equals("https://zeenews.india.com/india/supreme-court-stays-ed-probe-into-tamil-nadus-tasmac-issues-notice-to-agency-2904591.html")) {
+		else if (url.equals("https://zeenews.india.com/india/new-chapter-in-india-canada-relations-jaishankar-anand-hold-talks-to-improve-ties-2906345.html")) {
 			expectedValues.put("viewport", "width=device-width, initial-scale=1");
 			expectedValues.put("robots", "max-image-preview:large");
 			expectedValues.put("theme-color", "#345678");
-			expectedValues.put("description", "The stay was issued in response to a petition filed by the Tamil Nadu government, which challenged the recent raids conducted by the central agency at various TASMAC locations.");
-			expectedValues.put("keywords", "Tasmac,Tasmac");
+			expectedValues.put("description", "https://zeenews.india.com/india/new-chapter-in-india-canada-relations-jaishankar-anand-hold-talks-to-improve-ties-2906345.htmlhttps://zeenews.india.com/india/new-chapter-in-india-canada-relations-jaishankar-anand-hold-talks-to-improve-ties-2906345.html");
+			expectedValues.put("keywords", "Dr S Jaishankar, Anita Anand, India, Canada, G7 ,Dr S Jaishankar, Anita Anand, India, Canada, G7");
 			expectedValues.put("og:type", "website");
 			expectedValues.put("og:site_name", "Zee News");
-			expectedValues.put("og:title", "Supreme Court Stays ED Probe Into Tamil Nadus TASMAC; Issues Notice To Agency");
-			expectedValues.put("og:description", "The stay was issued in response to a petition filed by the Tamil Nadu government, which challenged the recent raids conducted by the central agency at various TASMAC locations.");
-			expectedValues.put("og:url", "https://zeenews.india.com/india/supreme-court-stays-ed-probe-into-tamil-nadus-tasmac-issues-notice-to-agency-2904591.html");
-			expectedValues.put("og:image", "https://english.cdn.zeenews.com/sites/default/files/2025/05/22/1754129-mixcollage-20-may-2025-11-38-am-6830.jpg");
-			expectedValues.put("canonical", "https://zeenews.india.com/india/supreme-court-stays-ed-probe-into-tamil-nadus-tasmac-issues-notice-to-agency-2904591.html");
+			expectedValues.put("og:title", "New Chapter In India-Canada Relations? Jaishankar-Anand Hold Talks To Improve Ties");
+			expectedValues.put("og:description", "The phone call between Jaishankar and Anand marks a renewed effort to strengthen bilateral relations, potentially paving the way for high-level visits and cooperation in areas such as Trade and Investment, Diplomatic Engagement, and Multilateral Cooperation.");
+			expectedValues.put("og:url", "https://zeenews.india.com/india/new-chapter-in-india-canada-relations-jaishankar-anand-hold-talks-to-improve-ties-2906345.html");
+			expectedValues.put("og:image", "https://english.cdn.zeenews.com/sites/default/files/2025/05/26/1756496-mixcollage-26-may-2025-09-53-am-9217.jpg");
+			expectedValues.put("canonical", "https://zeenews.india.com/india/new-chapter-in-india-canada-relations-jaishankar-anand-hold-talks-to-improve-ties-2906345.html");
 		}
+		else if (url.equals("https://zeenews.india.com/videos")) {  
+			expectedValues.put("viewport", "width=device-width, initial-scale=1");
+			expectedValues.put("robots", "max-image-preview:large");
+			expectedValues.put("description", "Latest News Videos: Watch videos on headlines & live updates, watch latest news video online, live news video clips online, video news covers all breaking news on politics, business, sports, bollywood, technology & health from India & the world at Zee News");
+			expectedValues.put("keywords", "Latest News Video Online, Watch News Headlines, Video On Breaking News, Live Updates Video On Politics, Online Videos On News, Sports Videos, News Videos, News Headlines Videos, Fashion Videos, Event Videos, Video Gallery");
+			expectedValues.put("og:type", "website");
+			expectedValues.put("og:site_name", "Zee News");
+			expectedValues.put("og:title", "Videos");
+			expectedValues.put("og:description", "Zee News brings latest news from India and World on breaking news, today news headlines, politics, business, technology, bollywood, entertainment, sports and others. Find exclusive news stories on Indian politics, current affairs, cricket matches, festivals and events");
+			expectedValues.put("og:url", "https://zeenews.india.com/videos");
+			expectedValues.put("og:image", "https://english.cdn.zeenews.com/images/logo/placeholder_image.jpg");
+			expectedValues.put("canonical", "https://zeenews.india.com/videos");
+		}
+		else if (url.equals("https://zeenews.india.com/video/news/dna-army-chief-asim-munir-who-has-become-field-marshal-in-pakistan-is-creating-new-dramas-every-day-2906006.html")) {  
+			expectedValues.put("viewport", "width=device-width, initial-scale=1");
+			expectedValues.put("robots", "max-image-preview:large");
+			expectedValues.put("description", "Army Chief Asim Munir, who has become Field Marshal in Pakistan, is creating new dramas every day. Today Asim Munir has given a gift to the President and Prime Minister of the country. Everyone is talking about this gift. Watch video on Zee News");
+			expectedValues.put("keywords", "dna with raul sinha, army chief asim munir, who has become Field Marshal in Pakistan, Pakistan news, Asim Munir news, given a gift to the President, Prime Minister of the country, DNA, DNA, Ranul Sinha live now, rahul Sinha today, Zee News live, asim munir, Pakistan, Shehbaz Sharif, Operation Sindoor, Pahalgam Terror Attack, Asim Munir Field Marshal, Asim munir promoted field marshal, Asim Munir family");
+			expectedValues.put("og:type", "website");
+			expectedValues.put("og:site_name", "Zee News");
+			expectedValues.put("og:title", "DNA: Army Chief Asim Munir, who has become Field Marshal in Pakistan, is creating new dramas every day");
+			expectedValues.put("og:description", "Army Chief Asim Munir, who has become Field Marshal in Pakistan, is creating new dramas every day. Today Asim Munir has given a gift to the President and Prime Minister of the country. Everyone is talking about this gift. Watch video on Zee News");
+			expectedValues.put("og:url", "https://zeenews.india.com/video/news/dna-army-chief-asim-munir-who-has-become-field-marshal-in-pakistan-is-creating-new-dramas-every-day-2906006.html");
+			expectedValues.put("og:image", "https://english.cdn.zeenews.com/sites/default/files/2025/05/25/00000003_7.jpg");
+			expectedValues.put("canonical", "https://zeenews.india.com/video/news/dna-army-chief-asim-munir-who-has-become-field-marshal-in-pakistan-is-creating-new-dramas-every-day-2906006.html");
+		}
+		else if (url.equals("https://zeenews.india.com/photos")) {  
+			expectedValues.put("viewport", "width=device-width, initial-scale=1");
+			expectedValues.put("robots", "max-image-preview:large");
+			expectedValues.put("description", "Latest News Photo Gallery: Check out top news photo, latest news picture, exclusives photos, best news photos at Zee News. Stay connected to know more about Latest photo galleries, sports photos, event photos, fashions photos");
+			expectedValues.put("keywords", "Latest News Photo, Photo Gallery Of Top News, News Pictures, Latest Photos Galleries On News, Online Photos, Photos, Fashion Photos, News Photos, Sports Photos, Entertainment Photos, Entertainment Photo Gallery, Sports Photo Gallery, Lifestyle Photo Gallery, News Photo Gallery, Bollywood Photo Gallery, Event Photos, Image Gallery");
+			expectedValues.put("og:type", "website");
+			expectedValues.put("og:site_name", "Zee News");
+			expectedValues.put("og:title", "PhotoGallery");
+			expectedValues.put("og:description", "Zee News brings latest news from India and World on breaking news, today news headlines, politics, business, technology, bollywood, entertainment, sports and others. Find exclusive news stories on Indian politics, current affairs, cricket matches, festivals and events");
+			expectedValues.put("og:url", "https://zeenews.india.com/photos");
+			expectedValues.put("og:image", "https://english.cdn.zeenews.com/images/logo/placeholder_image.jpg");
+			expectedValues.put("canonical", "https://zeenews.india.com/photos");
+		}
+		else if (url.equals("https://zeenews.india.com/photos/sports/4-players-delhi-capitals-might-release-after-ipl-2025-season-jake-fraser-mcgurk-faf-du-plessis-and-2906197")) {  
+			expectedValues.put("viewport", "width=device-width, initial-scale=1");
+			expectedValues.put("robots", "max-image-preview:large");
+			expectedValues.put("description", "Delhi Capitals (DC) had a terrific start to the Indian Premier League (IPL) 2025 season with four wins on the trot. However, the Axar Patel-led DC failed to continue their winning momentum and eventually failed to qualify for the IPL 2025 playoffs. After winning their last league match against Punjab Kings, Delhi Capitals finished at fifth spot in the league table of IPL 2025 with 15 points. The Delhi-based franchise might consider releasing some players after this IPL 2025 season based on their ordinary form, salary and age. Heres list of players which Delhi Capitals (DC) might release after IPL 2025 season:");
+			expectedValues.put("keywords", "Delhi Capitals, Delhi Capitals IPL 2025, IPL 2025 playoffs, Delhi Capitals IPL points table, Jake Fraser-McGurk, Jake Fraser-McGurk Delhi Capitals, Jake Fraser-McGurk IPL 2025, Jake Fraser-McGurk Records, Faf du Plessis, Faf du Plessis Delhi Capitals, Faf du Plessis IPL Records, Faf du Plessis IPL 2025, Faf du Plessis Runs, Mukesh Kumar, Mukesh Kumar Delhi Capitals, Mukesh Kumar IPL 2025, Dushmantha Chameera, Dushmantha Chameera IPL Records, Dushmantha Chameera Delhi Capitals");
+			expectedValues.put("og:type", "website");
+			expectedValues.put("og:site_name", "Zee News");
+			expectedValues.put("og:title", "4 Players Delhi Capitals Might Release After IPL 2025 Season: Jake Fraser-McGurk, Faf du Plessis And...");
+			expectedValues.put("og:description", "Delhi Capitals (DC) had a terrific start to the Indian Premier League (IPL) 2025 season with four wins on the trot. However, the Axar Patel-led DC failed to continue their winning momentum and eventually failed to qualify for the IPL 2025 playoffs. After winning their last league match against Punjab Kings, Delhi Capitals finished at fifth spot in the league table of IPL 2025 with 15 points. The Delhi-based franchise might consider releasing some players after this IPL 2025 season based on their ordinary form, salary and age. Heres list of players which Delhi Capitals (DC) might release after IPL 2025 season:");
+			expectedValues.put("og:url", "https://zeenews.india.com/photos/sports/4-players-delhi-capitals-might-release-after-ipl-2025-season-jake-fraser-mcgurk-faf-du-plessis-and-2906197");
+			expectedValues.put("og:image", "https://english.cdn.zeenews.com/sites/default/files/2025/05/25/1756326-dc-cover.jpg");
+			expectedValues.put("canonical", "https://zeenews.india.com/photos/sports/4-players-delhi-capitals-might-release-after-ipl-2025-season-jake-fraser-mcgurk-faf-du-plessis-and-2906197");
+		}
+		
 
 		return expectedValues.isEmpty() ? null : expectedValues;
 	}

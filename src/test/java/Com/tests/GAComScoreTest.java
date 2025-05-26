@@ -25,7 +25,9 @@ public class GAComScoreTest {
 
 		List<String[]> results = new ArrayList<>();
 		List<String> urls = Arrays.asList(
-				"https://zeenews.india.com/"    
+//				"https://zeenews.india.com/",
+//				 "https://www.dnaindia.com/",
+				  "https://www.wionews.com/"
 				);
 		// Setup ChromeDriver 
 		WebDriverManager.chromedriver().setup();
@@ -69,6 +71,7 @@ public class GAComScoreTest {
 		// Navigate to target site
 		for (String site : urls) {
 			driver.get(site);
+		}
 
 			// Wait some time to let the network activity complete
 			try {
@@ -90,6 +93,5 @@ public class GAComScoreTest {
 			driver.quit();
 		}
 	}
-}
 
 
