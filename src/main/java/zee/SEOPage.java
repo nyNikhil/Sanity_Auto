@@ -216,15 +216,19 @@ public class SEOPage {
 		else if (url.equals("https://zeenews.india.com/photos/india/6-books-you-should-read-if-you-are-a-classics-lover-from-metamorphosis-to-time-machine-2906675/metamorphosis-2906682")) {  
 			expectedValues.put("viewport", "width=device-width, initial-scale=1");
 			expectedValues.put("robots", "max-image-preview:large");
-			expectedValues.put("description", "<p>Old stories are kept alive in classic literature, inviting readers to revisit them as many times as they want. Check out seven books every classic literature enthusiast should read:</p><p> </p>");
+			expectedValues.put("description","<p>Old stories are kept alive in classic literature, inviting readers to revisit them as many times as they want. Check out seven books every classic literature enthusiast should read:</p>\r\n"
+					+ "\r\n"
+					+ "<p> </p>\r\n");
 			expectedValues.put("keywords", "news, latest news, today news, breaking news, news headlines, bollywood news, India news, top news, political news, business news, technology news, sports news");
 			expectedValues.put("og:type", "website");
 			expectedValues.put("og:site_name", "Zee News");
 			expectedValues.put("og:title", "6 Books You Should Read If You Are A Classics Lover - From Metamorphosis To Time Machine");
-			expectedValues.put("og:description", "<p>Old stories are kept alive in classic literature, inviting readers to revisit them as many times as they want. Check out seven books every classic literature enthusiast should read:</p><p> </p>");
+			expectedValues.put("og:description", "<p>Old stories are kept alive in classic literature, inviting readers to revisit them as many times as they want. Check out seven books every classic literature enthusiast should read:</p>\r\n"
+					+ "\r\n"
+					+ "<p> </p>\r\n");
 			expectedValues.put("og:url", "https://zeenews.india.com/photos/india/6-books-you-should-read-if-you-are-a-classics-lover-from-metamorphosis-to-time-machine-2906675");
 			expectedValues.put("og:image", "https://english.cdn.zeenews.com/sites/default/files/2025/05/26/1756925-slide-7.png?im=FitAndFill=(1200,900)");
-			expectedValues.put("canonical", "https://zeenews.india.com");
+			expectedValues.put("canonical", "https://zeenews.india.com/");
 		}
 		else if (url.equals("https://zeenews.india.com/photos")) {  
 			expectedValues.put("viewport", "width=device-width, initial-scale=1");
