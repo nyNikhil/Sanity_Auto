@@ -126,8 +126,8 @@ public class SEOPage {
 				"https://zeenews.india.com/india/new-chapter-in-india-canada-relations-jaishankar-anand-hold-talks-to-improve-ties-2906345.html",
 				"https://zeenews.india.com/videos",
 				"https://zeenews.india.com/video/news/dna-army-chief-asim-munir-who-has-become-field-marshal-in-pakistan-is-creating-new-dramas-every-day-2906006.html",
-				"https://zeenews.india.com/photos",
-				"https://zeenews.india.com/photos/sports/ipl-2025-how-can-rcbmi-pbks-gt-qualify-for-top-2-all-qualification-scenarios-explained-2906349"
+				"https://zeenews.india.com/photos/india/6-books-you-should-read-if-you-are-a-classics-lover-from-metamorphosis-to-time-machine-2906675/metamorphosis-2906682",
+				"https://zeenews.india.com/photos"
 				
 				
 				
@@ -177,7 +177,7 @@ public class SEOPage {
 			expectedValues.put("viewport", "width=device-width, initial-scale=1");
 			expectedValues.put("robots", "max-image-preview:large");
 			expectedValues.put("theme-color", "#345678");
-			expectedValues.put("description", "https://zeenews.india.com/india/new-chapter-in-india-canada-relations-jaishankar-anand-hold-talks-to-improve-ties-2906345.htmlhttps://zeenews.india.com/india/new-chapter-in-india-canada-relations-jaishankar-anand-hold-talks-to-improve-ties-2906345.html");
+			expectedValues.put("description", "The phone call between Jaishankar and Anand marks a renewed effort to strengthen bilateral relations, potentially paving the way for high-level visits and cooperation in areas such as Trade and Investment, Diplomatic Engagement, and Multilateral Cooperation.");
 			expectedValues.put("keywords", "Dr S Jaishankar, Anita Anand, India, Canada, G7 ,Dr S Jaishankar, Anita Anand, India, Canada, G7");
 			expectedValues.put("og:type", "website");
 			expectedValues.put("og:site_name", "Zee News");
@@ -213,6 +213,19 @@ public class SEOPage {
 			expectedValues.put("og:image", "https://english.cdn.zeenews.com/sites/default/files/2025/05/25/00000003_7.jpg");
 			expectedValues.put("canonical", "https://zeenews.india.com/video/news/dna-army-chief-asim-munir-who-has-become-field-marshal-in-pakistan-is-creating-new-dramas-every-day-2906006.html");
 		}
+		else if (url.equals("https://zeenews.india.com/photos/india/6-books-you-should-read-if-you-are-a-classics-lover-from-metamorphosis-to-time-machine-2906675/metamorphosis-2906682")) {  
+			expectedValues.put("viewport", "width=device-width, initial-scale=1");
+			expectedValues.put("robots", "max-image-preview:large");
+			expectedValues.put("description", "<p>Old stories are kept alive in classic literature, inviting readers to revisit them as many times as they want. Check out seven books every classic literature enthusiast should read:</p><p> </p>");
+			expectedValues.put("keywords", "news, latest news, today news, breaking news, news headlines, bollywood news, India news, top news, political news, business news, technology news, sports news");
+			expectedValues.put("og:type", "website");
+			expectedValues.put("og:site_name", "Zee News");
+			expectedValues.put("og:title", "6 Books You Should Read If You Are A Classics Lover - From Metamorphosis To Time Machine");
+			expectedValues.put("og:description", "<p>Old stories are kept alive in classic literature, inviting readers to revisit them as many times as they want. Check out seven books every classic literature enthusiast should read:</p><p> </p>");
+			expectedValues.put("og:url", "https://zeenews.india.com/photos/india/6-books-you-should-read-if-you-are-a-classics-lover-from-metamorphosis-to-time-machine-2906675");
+			expectedValues.put("og:image", "https://english.cdn.zeenews.com/sites/default/files/2025/05/26/1756925-slide-7.png?im=FitAndFill=(1200,900)");
+			expectedValues.put("canonical", "https://zeenews.india.com");
+		}
 		else if (url.equals("https://zeenews.india.com/photos")) {  
 			expectedValues.put("viewport", "width=device-width, initial-scale=1");
 			expectedValues.put("robots", "max-image-preview:large");
@@ -226,19 +239,7 @@ public class SEOPage {
 			expectedValues.put("og:image", "https://english.cdn.zeenews.com/images/logo/placeholder_image.jpg");
 			expectedValues.put("canonical", "https://zeenews.india.com/photos");
 		}
-		else if (url.equals("https://zeenews.india.com/photos/sports/4-players-delhi-capitals-might-release-after-ipl-2025-season-jake-fraser-mcgurk-faf-du-plessis-and-2906197")) {  
-			expectedValues.put("viewport", "width=device-width, initial-scale=1");
-			expectedValues.put("robots", "max-image-preview:large");
-			expectedValues.put("description", "Delhi Capitals (DC) had a terrific start to the Indian Premier League (IPL) 2025 season with four wins on the trot. However, the Axar Patel-led DC failed to continue their winning momentum and eventually failed to qualify for the IPL 2025 playoffs. After winning their last league match against Punjab Kings, Delhi Capitals finished at fifth spot in the league table of IPL 2025 with 15 points. The Delhi-based franchise might consider releasing some players after this IPL 2025 season based on their ordinary form, salary and age. Heres list of players which Delhi Capitals (DC) might release after IPL 2025 season:");
-			expectedValues.put("keywords", "Delhi Capitals, Delhi Capitals IPL 2025, IPL 2025 playoffs, Delhi Capitals IPL points table, Jake Fraser-McGurk, Jake Fraser-McGurk Delhi Capitals, Jake Fraser-McGurk IPL 2025, Jake Fraser-McGurk Records, Faf du Plessis, Faf du Plessis Delhi Capitals, Faf du Plessis IPL Records, Faf du Plessis IPL 2025, Faf du Plessis Runs, Mukesh Kumar, Mukesh Kumar Delhi Capitals, Mukesh Kumar IPL 2025, Dushmantha Chameera, Dushmantha Chameera IPL Records, Dushmantha Chameera Delhi Capitals");
-			expectedValues.put("og:type", "website");
-			expectedValues.put("og:site_name", "Zee News");
-			expectedValues.put("og:title", "4 Players Delhi Capitals Might Release After IPL 2025 Season: Jake Fraser-McGurk, Faf du Plessis And...");
-			expectedValues.put("og:description", "Delhi Capitals (DC) had a terrific start to the Indian Premier League (IPL) 2025 season with four wins on the trot. However, the Axar Patel-led DC failed to continue their winning momentum and eventually failed to qualify for the IPL 2025 playoffs. After winning their last league match against Punjab Kings, Delhi Capitals finished at fifth spot in the league table of IPL 2025 with 15 points. The Delhi-based franchise might consider releasing some players after this IPL 2025 season based on their ordinary form, salary and age. Heres list of players which Delhi Capitals (DC) might release after IPL 2025 season:");
-			expectedValues.put("og:url", "https://zeenews.india.com/photos/sports/4-players-delhi-capitals-might-release-after-ipl-2025-season-jake-fraser-mcgurk-faf-du-plessis-and-2906197");
-			expectedValues.put("og:image", "https://english.cdn.zeenews.com/sites/default/files/2025/05/25/1756326-dc-cover.jpg");
-			expectedValues.put("canonical", "https://zeenews.india.com/photos/sports/4-players-delhi-capitals-might-release-after-ipl-2025-season-jake-fraser-mcgurk-faf-du-plessis-and-2906197");
-		}
+		
 		
 
 		return expectedValues.isEmpty() ? null : expectedValues;
